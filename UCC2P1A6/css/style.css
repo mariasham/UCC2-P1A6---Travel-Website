@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  background-color: #0a5362;
+}
+
+.page-shell {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.hero-card {
+  width: 900px;
+  max-width: 100%;
+  background-color: #e8ec9d;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.topbar {
+  background-color: #ef9148;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 28px;
+}
+
+.brand {
+  font-size: 2rem;
+  color: #6e2d3b;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #6e2d3b;
+  margin-left: 18px;
+  font-size: 1rem;
+}
+
+.hero-content {
+  padding: 24px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
+}
+
+.hero-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+.hero-text h1 {
+  margin: 0;
+  font-size: 4.5rem;
+  color: #6e2d3b;
+  line-height: 1;
+}
+
+.hero-text p {
+  margin: 8px 0 0 0;
+  font-size: 1.25rem;
+  color: #6e2d3b;
+  font-family: Arial, sans-serif;
+}
+
+.hero-button {
+  text-decoration: none;
+  color: #6e2d3b;
+  border: 2px solid #6e2d3b;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-family: Arial, sans-serif;
+  background-color: #f6eeb7;
+}
+
+.hero-button:hover {
+  background-color: #f2e39c;
+}
