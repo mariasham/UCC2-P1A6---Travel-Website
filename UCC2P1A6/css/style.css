@@ -8,17 +8,18 @@ body {
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  padding: 40px;
+  align-items: flex-start;
+  padding: 40px 20px;
   box-sizing: border-box;
 }
 
 .hero-card {
-  width: 900px;
+  width: 1000px;
   max-width: 100%;
   background-color: #e8ec9d;
-  border-radius: 14px;
-  overflow: hidden;
+  border-radius: 16px;
+  overflow: visible;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
 }
 
 .topbar {
@@ -26,19 +27,80 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 28px;
+  padding: 16px 24px;
+  flex-wrap: wrap;
+  gap: 12px;
+  position: relative;
+  z-index: 20;
 }
 
 .brand {
   font-size: 2rem;
   color: #6e2d3b;
+  font-weight: normal;
 }
 
-.nav-links a {
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  z-index: 30;
+}
+
+.nav-links a,
+.dropbtn {
   text-decoration: none;
   color: #6e2d3b;
-  margin-left: 18px;
-  font-size: 1rem;
+  font-size: 0.98rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px 10px;
+  font-family: Arial, sans-serif;
+}
+
+.nav-links a:hover,
+.dropbtn:hover {
+  text-decoration: underline;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 210px;
+  background-color: #f6efc2;
+  border: 1px solid #d6b183;
+  border-radius: 10px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16);
+  padding: 8px 0;
+  z-index: 999;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 14px;
+  color: #6e2d3b;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.dropdown-content a:hover {
+  background-color: #f2e39c;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .hero-content {
@@ -47,7 +109,7 @@ body {
 
 .hero-image {
   width: 100%;
-  height: 340px;
+  height: 360px;
   object-fit: cover;
   border-radius: 14px;
   display: block;
@@ -59,20 +121,23 @@ body {
   align-items: flex-end;
   gap: 20px;
   padding-top: 20px;
+  flex-wrap: wrap;
 }
 
 .hero-text h1 {
   margin: 0;
-  font-size: 4.5rem;
+  font-size: 4.4rem;
   color: #6e2d3b;
   line-height: 1;
 }
 
 .hero-text p {
-  margin: 8px 0 0 0;
-  font-size: 1.25rem;
+  margin: 10px 0 0 0;
+  font-size: 1.15rem;
   color: #6e2d3b;
   font-family: Arial, sans-serif;
+  line-height: 1.5;
+  max-width: 650px;
 }
 
 .hero-button {
@@ -83,8 +148,128 @@ body {
   border-radius: 12px;
   font-family: Arial, sans-serif;
   background-color: #f6eeb7;
+  display: inline-block;
 }
 
 .hero-button:hover {
   background-color: #f2e39c;
+}
+
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.content-card {
+  background-color: #f6efc2;
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.content-card h1 {
+  margin-top: 0;
+  font-size: 3rem;
+  color: #6e2d3b;
+}
+
+.content-card h2 {
+  color: #6e2d3b;
+  margin-bottom: 8px;
+}
+
+.content-card p,
+.content-card li {
+  color: #6e2d3b;
+  font-family: Arial, sans-serif;
+  line-height: 1.65;
+  font-size: 1rem;
+}
+
+.content-card ul {
+  padding-left: 20px;
+}
+
+.form-card {
+  max-width: 560px;
+  margin: 0 auto;
+  background-color: #f6efc2;
+  border-radius: 14px;
+  padding: 28px;
+}
+
+.page-title {
+  margin: 0 0 10px 0;
+  font-size: 3rem;
+  color: #6e2d3b;
+}
+
+.page-copy {
+  margin: 0 0 20px 0;
+  color: #6e2d3b;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+form label {
+  display: block;
+  margin: 12px 0 6px 0;
+  color: #6e2d3b;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #caa27b;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.submit-button {
+  margin-top: 16px;
+  background-color: #ef9148;
+  color: #6e2d3b;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #e4833a;
+}
+
+.map-frame {
+  width: 100%;
+  height: 380px;
+  border: 0;
+  border-radius: 14px;
+  margin-top: 18px;
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 3rem;
+  }
+
+  .topbar {
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    gap: 4px;
+  }
+
+  .dropdown-content {
+    min-width: 180px;
+  }
 }
