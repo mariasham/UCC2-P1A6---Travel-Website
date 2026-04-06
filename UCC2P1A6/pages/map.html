@@ -1,35 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Map</title>
-<link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map - Exploratour</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
 
 <div class="page-shell">
-<div class="hero-card">
+    <div class="hero-card">
 
-<header class="topbar">
-<div class="brand">Exploratour</div>
-<nav class="nav-links">
-<a href="../index.html">Home</a>
-<a href="destinations.html">Destinations</a>
-</nav>
-</header>
+        <header class="topbar">
+            <div class="brand">Exploratour</div>
 
-<main class="hero-content">
-<h1>Map</h1>
+            <nav class="nav-links">
+                <a href="../index.html">Home</a>
+                <a href="destinations.html">Destinations</a>
+                <a href="flights.html">Flights</a>
+                <a href="hotels.html">Hotels</a>
+                <a href="map.html">Map</a>
+                <a href="videos.html">Videos</a>
+                <a href="login.html">Login</a>
+            </nav>
+        </header>
 
-<p>
-Sometimes you need to see it laid out. This helps you understand where things actually are.
-</p>
+        <main class="hero-content">
 
-<iframe class="map-frame"
-src="https://www.google.com/maps?q=Rome&output=embed">
-</iframe>
+            <div class="content-card">
 
-</main>
-</div>
+                <h1>Map</h1>
+
+                <p>
+                    Sometimes it helps to actually see where everything is.
+                    This gives you a better sense of distance, location, and how your trip fits together.
+                </p>
+
+                <iframe
+                    class="map-frame"
+                    src="https://www.google.com/maps?q=Paris&output=embed"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+
+                <p>
+                    Try switching locations mentally — think about where you'd stay, what’s nearby, and how easy it is to move around.
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
 </div>
 
 </body>

@@ -1,56 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Register - Exploratour</title>
-<link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Exploratour</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
 <div class="page-shell">
-<div class="hero-card">
+  <div class="hero-card">
 
-<header class="topbar">
-<div class="brand">Exploratour</div>
-<nav class="nav-links">
-<a href="../index.html">Home</a>
-<a href="destinations.html">Destinations</a>
-<a href="flights.html">Flights</a>
-<a href="hotels.html">Hotels</a>
-<a href="map.html">Map</a>
-<a href="videos.html">Videos</a>
-<a href="login.html">Login</a>
-</nav>
-</header>
+    <header class="topbar">
+      <div class="brand">Exploratour</div>
 
-<main class="hero-content">
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </header>
 
-<h1>Register</h1>
+    <main class="hero-content">
+      <div class="form-card">
+        <h1 class="page-title">Register</h1>
+        <p class="page-copy">
+          Create an account so you can start saving destinations, organizing ideas, and making your trip plans feel more put together.
+        </p>
 
-<p>
-Create an account so you can actually keep track of your trips instead of losing everything.
-</p>
+        <form action="success.html">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" required>
 
-<form action="success.html">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
 
-<label>Full Name</label>
-<input type="text" required>
+          <label for="traveldate">Preferred Travel Date</label>
+          <input type="date" id="traveldate" name="traveldate" required>
 
-<label>Email</label>
-<input type="email" required>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required minlength="6">
 
-<label>Travel Date</label>
-<input type="date" required>
+          <button type="submit" class="submit-button">Register</button>
+        </form>
+      </div>
+    </main>
 
-<label>Password</label>
-<input type="password" required minlength="6">
-
-<button type="submit">Register</button>
-
-</form>
-
-</main>
-
-</div>
+  </div>
 </div>
 
 </body>

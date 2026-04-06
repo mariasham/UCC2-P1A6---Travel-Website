@@ -1,50 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Login - Exploratour</title>
-<link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Exploratour</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
 <div class="page-shell">
-<div class="hero-card">
+  <div class="hero-card">
 
-<header class="topbar">
-<div class="brand">Exploratour</div>
-<nav class="nav-links">
-<a href="../index.html">Home</a>
-<a href="destinations.html">Destinations</a>
-<a href="flights.html">Flights</a>
-<a href="hotels.html">Hotels</a>
-<a href="map.html">Map</a>
-<a href="videos.html">Videos</a>
-<a href="register.html">Register</a>
-</nav>
-</header>
+    <header class="topbar">
+      <div class="brand">Exploratour</div>
 
-<main class="hero-content">
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="destinations.html">Destinations</a>
+        <a href="contact.html">Contact</a>
+        <a href="register.html">Register</a>
+      </nav>
+    </header>
 
-<h1>Login</h1>
+    <main class="hero-content">
+      <div class="form-card">
+        <h1 class="page-title">Login</h1>
+        <p class="page-copy">
+          Log back in to keep up with your saved trips, your planning details, and anything you’ve already started putting together.
+        </p>
 
-<p>
-Log back in to pick up where you left off — your trips, ideas, and plans are all waiting for you.
-</p>
+        <form action="success.html">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
 
-<form action="success.html">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required minlength="6">
 
-<label>Email</label>
-<input type="email" placeholder="Enter your email" required>
+          <button type="submit" class="submit-button">Login</button>
+        </form>
+      </div>
+    </main>
 
-<label>Password</label>
-<input type="password" placeholder="Enter your password" required minlength="6">
-
-<button type="submit">Login</button>
-
-</form>
-
-</main>
-
-</div>
+  </div>
 </div>
 
 </body>
