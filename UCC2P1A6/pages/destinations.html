@@ -1,67 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destinations - Exploratour</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Destinations | Exploratour</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
 </head>
-
 <body>
 
 <div class="page-shell">
-    <div class="hero-card">
+  <div class="site-card">
 
-        <header class="topbar">
-            <div class="brand">Exploratour</div>
+    <!-- SAME HEADER AS INDEX -->
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">✦</span>
+        <span class="brand-text">Exploratour</span>
+      </div>
 
-            <nav class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="destinations.html">Destinations</a>
-                <a href="flights.html">Flights</a>
-                <a href="hotels.html">Hotels</a>
-                <a href="map.html">Map</a>
-                <a href="videos.html">Videos</a>
-                <a href="login.html">Login</a>
-            </nav>
-        </header>
+      <div class="topbar-right">
+        <a href="login.html" class="text-link">Log In</a>
+        <a href="register.html" class="button-light">Sign Up</a>
+        <button class="hamburger" id="menuBtn">☰</button>
+      </div>
 
-        <main class="hero-content">
+      <nav class="mobile-menu" id="mobileMenu">
+        <div class="menu-section">
+          <p>Explore</p>
+          <a href="destinations.html">Destinations</a>
+          <a href="country.html">Country</a>
+          <a href="cityguide.html">City Guide</a>
+          <a href="activities.html">Activities</a>
+        </div>
 
-            <div class="content-card">
+        <div class="menu-section">
+          <p>Plan</p>
+          <a href="booking.html">Booking</a>
+          <a href="flights.html">Flights</a>
+          <a href="hotels.html">Hotels</a>
+        </div>
 
-                <h1>Destinations</h1>
+        <div class="menu-section">
+          <p>Account</p>
+          <a href="account.html">Account</a>
+        </div>
+      </nav>
+    </header>
 
-                <p>
-                    This is where you start figuring out where you actually want to go.
-                    Some places feel right immediately, others grow on you — this is just about exploring without pressure.
-                </p>
+    <!-- PAGE CONTENT -->
+    <main style="padding: 120px 30px 40px;">
 
-                <h2>Popular Travel Styles</h2>
-                <ul>
-                    <li>Coastal cities and beaches</li>
-                    <li>Mountain escapes</li>
-                    <li>Historic towns</li>
-                    <li>Luxury destinations</li>
-                    <li>Nature-focused trips</li>
-                </ul>
+      <h1 style="font-size: 2.5rem; margin-bottom: 10px;">
+        Destinations
+      </h1>
 
-                <h2>Example Destinations</h2>
-                <ul>
-                    <li>Paris, France</li>
-                    <li>Rome, Italy</li>
-                    <li>Tokyo, Japan</li>
-                    <li>New York City, USA</li>
-                    <li>Barcelona, Spain</li>
-                </ul>
+      <p style="color: #5e646b; margin-bottom: 30px;">
+        Explore places around the world and find where you want to go next.
+      </p>
 
-                <a href="map.html" class="hero-button">View on Map</a>
+      <div class="card-grid">
 
-            </div>
+        <div class="info-card">
+          <img src="../images/green.png" alt="Europe">
+          <div class="card-body">
+            <h3>Europe</h3>
+            <p>Historic cities, culture, and unforgettable views.</p>
+          </div>
+        </div>
 
-        </main>
+        <div class="info-card">
+          <img src="../images/street.jpg" alt="Asia">
+          <div class="card-body">
+            <h3>Asia</h3>
+            <p>Vibrant life, food, and deep cultural experiences.</p>
+          </div>
+        </div>
 
-    </div>
+        <div class="info-card">
+          <img src="../images/street.jpg" alt="USA">
+          <div class="card-body">
+            <h3>United States</h3>
+            <p>Diverse cities, landscapes, and hidden gems.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
 </div>
 
 </body>
