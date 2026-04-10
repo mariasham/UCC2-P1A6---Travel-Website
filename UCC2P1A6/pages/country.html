@@ -3,35 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAGE TITLE - Exploratour</title>
+  <title>Country | Exploratour</title>
   <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
 </head>
 <body>
 
-  <div class="page-shell">
-    <div class="hero-card">
+<div class="page-shell">
+  <div class="site-card">
 
-      <header class="topbar">
-        <div class="brand">Exploratour</div>
-        <nav class="nav-links">
-          <a href="../index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="destinations.html">Destinations</a>
-          <a href="booking.html">Booking</a>
-          <a href="videos.html">Videos</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </header>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark">✦</span>
+        <span class="brand-text">Exploratour</span>
+      </div>
 
-      <main class="hero-content">
-        <div class="content-card">
-          <h1>PAGE HEADING</h1>
-          <p>PAGE DESCRIPTION</p>
-        </div>
-      </main>
+      <div class="topbar-right">
+        <a href="login.html" class="text-link">Log In</a>
+        <a href="register.html" class="button-light">Sign Up</a>
+        <button class="hamburger" id="menuBtn">☰</button>
+      </div>
+    </header>
 
-    </div>
+    <main style="padding:120px 30px 40px;">
+
+      <h1 id="countryTitle"></h1>
+      <p id="countryDesc" style="color:#5e646b;"></p>
+
+      <div class="card-grid" id="cityGrid"></div>
+
+    </main>
+
   </div>
+</div>
 
 </body>
 </html>
