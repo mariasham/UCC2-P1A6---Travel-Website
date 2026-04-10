@@ -1,49 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - Exploratour</title>
+  <title>Login | Exploratour</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
+  <div class="page-shell">
+    <div class="site-card">
 
-<div class="page-shell">
-  <div class="hero-card">
+      <!-- HEADER (matches your other pages) -->
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </div>
 
-    <header class="topbar">
-      <div class="brand">Exploratour</div>
+        <div class="topbar-right">
+          <a href="../index.html" class="text-link">Home</a>
+          <a href="destinations.html" class="text-link">Destinations</a>
+          <a href="register.html" class="button-light">Sign Up</a>
+        </div>
+      </header>
 
-      <nav class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="destinations.html">Destinations</a>
-        <a href="contact.html">Contact</a>
-        <a href="register.html">Register</a>
-      </nav>
-    </header>
+      <!-- PAGE CONTENT -->
+      <main style="padding:120px 30px 60px; display:flex; justify-content:center;">
 
-    <main class="hero-content">
-      <div class="form-card">
-        <h1 class="page-title">Login</h1>
-        <p class="page-copy">
-          Log back in to keep up with your saved trips, your planning details, and anything you’ve already started putting together.
-        </p>
+        <div class="form-card">
+          <h1 class="page-title">Login</h1>
 
-        <form action="success.html">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
+          <p class="page-copy">
+            Log back in to keep up with your saved trips, your planning details,
+            and everything you’ve already started building.
+          </p>
 
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" required minlength="6">
+          <form action="success.html">
 
-          <button type="submit" class="submit-button">Login</button>
-        </form>
-      </div>
-    </main>
+            <form action="success.html">
 
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required minlength="6">
+
+              <p style="margin-top: 8px; font-size: 0.9rem;">
+                <a href="#" style="color:#2e5e3a;">Forgot password?</a>
+              </p>
+
+              <button type="submit" class="submit-button">Login</button>
+
+              <p style="margin-top: 15px; text-align:center; font-size: 0.95rem;">
+                Don’t have an account?
+                <a href="register.html" style="color:#2e5e3a; font-weight:600;">
+                  Sign up
+                </a>
+              </p>
+
+            </form>
+          </form>
+
+        </div>
+
+      </main>
+
+    </div>
   </div>
-</div>
-
 </body>
+
 </html>

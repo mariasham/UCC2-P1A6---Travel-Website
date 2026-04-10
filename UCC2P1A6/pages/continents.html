@@ -7,105 +7,104 @@
   <link rel="stylesheet" href="../css/style.css">
   <script src="../js/script.js" defer></script>
 </head>
+
 <body>
+  <div class="page-shell">
+    <div class="site-card">
 
-<div class="page-shell">
-  <div class="site-card">
+      <!-- HEADER -->
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </div>
 
-    <header class="topbar">
-      <div class="brand">
-        <span class="brand-mark">✦</span>
-        <span class="brand-text">Exploratour</span>
-      </div>
+        <div class="topbar-right">
+          <a href="../index.html" class="text-link">Home</a>
+          <a href="login.html" class="text-link">Log In</a>
+          <a href="register.html" class="button-light">Sign Up</a>
+        </div>
+      </header>
 
-      <div class="topbar-right">
-        <a href="login.html" class="text-link">Log In</a>
-        <a href="register.html" class="button-light">Sign Up</a>
-        <button class="hamburger" id="menuBtn">☰</button>
-      </div>
-    </header>
+      <!-- PAGE CONTENT -->
+      <main style="padding:120px 30px 40px;">
 
-    <main style="padding:120px 30px 40px;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 10px; text-align:center;">
+          Explore by Continent
+        </h1>
 
-      <h1>Explore by Continent</h1>
-      <p style="color:#5e646b; margin-bottom:30px;">
-        Choose a region, then explore countries and cities like a local.
-      </p>
+        <p style="color:#5e646b; margin-bottom:30px; text-align:center;">
+          Choose a region, then explore countries and cities like a local.
+        </p>
 
-      <div class="grid-layout">
+        <div class="grid-layout">
 
-        <a href="country.html?place=italy" class="info-card">
-          <img src="../images/street.jpg">
-          <div class="card-body">
-            <h3>Europe</h3>
-            <p>Old streets, slow life, and deep culture.</p>
+          <!-- EUROPE -->
+          <a href="country.html?continent=europe" class="info-card">
+            <img src="../images/europe.png" alt="Europe">
+            <div class="card-body">
+              <h3>Europe</h3>
+              <p>Old streets, slow life, and deep culture.</p>
+            </div>
+          </a>
+
+          <!-- ASIA -->
+          <a href="country.html?continent=asia" class="info-card">
+            <img src="../images/asia.png" alt="Asia">
+            <div class="card-body">
+              <h3>Asia</h3>
+              <p>Fast, vibrant, and deeply rooted traditions.</p>
+            </div>
+          </a>
+
+          <!-- AFRICA -->
+          <a href="country.html?continent=africa" class="info-card">
+            <img src="../images/africa.png" alt="Africa">
+            <div class="card-body">
+              <h3>Africa</h3>
+              <p>Color, rhythm, and unforgettable energy.</p>
+            </div>
+          </a>
+
+          <!-- (OPTIONAL PLACEHOLDERS FOR NOW) -->
+
+          <div class="info-card">
+            <img src="../images/northamerica.png" alt="North America">
+            <div class="card-body">
+              <h3>North America</h3>
+              <p>Coming soon</p>
+            </div>
           </div>
-        </a>
 
-        <a href="country.html?place=japan" class="info-card">
-          <img src="../images/street.jpg">
-          <div class="card-body">
-            <h3>Asia</h3>
-            <p>Fast, vibrant, and deeply rooted traditions.</p>
+          <div class="info-card">
+            <img src="../images/southamerica.png" alt="South America">
+            <div class="card-body">
+              <h3>South America</h3>
+              <p>Coming soon</p>
+            </div>
           </div>
-        </a>
 
-        <a href="country.html?place=morocco" class="info-card">
-          <img src="../images/street.jpg">
-          <div class="card-body">
-            <h3>Africa</h3>
-            <p>Color, rhythm, and unforgettable energy.</p>
+          <div class="info-card">
+            <img src="../images/australia.png" alt="Australia">
+            <div class="card-body">
+              <h3>Australia</h3>
+              <p>Coming soon</p>
+            </div>
           </div>
-        </a>
 
-      </div>
+          <div class="info-card">
+            <img src="../images/antarctica.png" alt="Antarctica">
+            <div class="card-body">
+              <h3>Antarctica</h3>
+              <p>Coming soon</p>
+            </div>
+          </div>
 
-    </main>
+        </div>
 
+      </main>
+
+    </div>
   </div>
-</div>
-
-</body>
-</html>
-    <main style="padding:120px 30px 40px;">
-
-      <h1>Explore by Continent</h1>
-      <p style="color:#5e646b; margin-bottom:30px;">
-        Choose a region, then explore countries and cities like a local.
-      </p>
-
-      <div class="grid-layout">
-
-        <a href="country.html?place=italy" class="info-card">
-          <img src="../images/street.jpg">
-          <div class="card-body">
-            <h3>Europe</h3>
-            <p>Old streets, slow life, and deep culture.</p>
-          </div>
-        </a>
-
-        <a href="country.html?place=japan" class="info-card">
-          <img src="../images/street.jpg">
-          <div class="card-body">
-            <h3>Asia</h3>
-            <p>Fast, vibrant, and deeply rooted traditions.</p>
-          </div>
-        </a>
-
-        <a href="country.html?place=morocco" class="info-card">
-          <img src="../images/street.jpg">
-          <div class="card-body">
-            <h3>Africa</h3>
-            <p>Color, rhythm, and unforgettable energy.</p>
-          </div>
-        </a>
-
-      </div>
-
-    </main>
-
-  </div>
-</div>
-
 </body>
 </html>

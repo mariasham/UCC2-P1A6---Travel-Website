@@ -3,35 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Account - Exploratour</title>
+  <title>Account | Exploratour</title>
   <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-
   <div class="page-shell">
-    <div class="hero-card">
+    <div class="site-card">
 
+      <!-- HEADER -->
       <header class="topbar">
-        <div class="brand">Exploratour</div>
-        <nav class="nav-links">
-          <a href="../index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="destinations.html">Destinations</a>
-          <a href="booking.html">Booking</a>
-          <a href="videos.html">Videos</a>
-          <a href="contact.html">Contact</a>
-        </nav>
+        <div class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </div>
+
+        <div class="topbar-right">
+          <a href="../index.html" class="text-link">Home</a>
+          <a href="destinations.html" class="text-link">Destinations</a>
+          <a href="login.html" class="button-light">Login</a>
+        </div>
       </header>
 
-      <main class="hero-content">
-        <div class="content-card">
-          <h1>Account</h1>
-          <p>This page allows users to manage their personal account information, preferences, and travel activity.</p>
-        </div>
+      <!-- PAGE CONTENT -->
+      <main style="padding:120px 30px 60px;">
+
+        <h1 style="text-align:center; margin-bottom:10px;">
+          Your Account
+        </h1>
+
+        <p style="text-align:center; color:#5e646b; margin-bottom:40px;">
+          Keep track of your plans, preferences, and everything you’ve saved.
+        </p>
+
+        <!-- ACCOUNT SECTIONS -->
+        <section class="grid-layout">
+
+          <div class="info-card">
+            <div class="card-body">
+              <h3>Saved Trips</h3>
+              <p>View and manage destinations you’ve saved for later.</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="card-body">
+              <h3>Preferences</h3>
+              <p>Update travel styles, budget, and interests.</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="card-body">
+              <h3>Booking History</h3>
+              <p>Review past trips, hotels, and flights.</p>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- ACTION -->
+        <section style="max-width:600px; margin:40px auto 0; text-align:center;">
+          <p style="color:#5e646b;">
+            This is where your travel planning starts to come together.
+          </p>
+
+          <a href="destinations.html" class="submit-button" style="display:inline-block; margin-top:15px;">
+            Start Exploring
+          </a>
+        </section>
+
       </main>
 
     </div>
   </div>
-
 </body>
 </html>

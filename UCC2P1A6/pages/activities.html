@@ -3,35 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAGE TITLE - Exploratour</title>
+  <title>Videos | Exploratour</title>
   <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
 </head>
+
 <body>
-
   <div class="page-shell">
-    <div class="hero-card">
+    <div class="site-card">
 
+      <!-- HEADER -->
       <header class="topbar">
-        <div class="brand">Exploratour</div>
-        <nav class="nav-links">
-          <a href="../index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="destinations.html">Destinations</a>
-          <a href="booking.html">Booking</a>
-          <a href="videos.html">Videos</a>
-          <a href="contact.html">Contact</a>
-        </nav>
+        <div class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </div>
+
+        <div class="topbar-right">
+          <a href="../index.html" class="text-link">Home</a>
+          <a href="destinations.html" class="text-link">Destinations</a>
+          <a href="login.html" class="button-light">Login</a>
+        </div>
       </header>
 
-      <main class="hero-content">
-        <div class="content-card">
-          <h1>PAGE HEADING</h1>
-          <p>PAGE DESCRIPTION</p>
-        </div>
+      <!-- PAGE CONTENT -->
+      <main style="padding:120px 30px 60px;">
+
+        <h1 style="text-align:center; margin-bottom:10px;">
+          Travel Inspiration
+        </h1>
+
+        <p style="text-align:center; color:#5e646b; margin-bottom:40px;">
+          Sometimes you don’t need more information — you just need to see it.
+          Let these moments help you imagine where you could go next.
+        </p>
+
+        <!-- VIDEO GRID -->
+        <section class="grid-layout">
+
+          <!-- VIDEO 1 -->
+          <div class="info-card">
+            <iframe width="100%" height="200" 
+              src="https://www.youtube.com/embed/Scxs7L0vhZ4" 
+              title="Italy Travel" frameborder="0" allowfullscreen>
+            </iframe>
+            <div class="card-body">
+              <h3>Italy</h3>
+              <p>Slow mornings, quiet streets, and everything in between.</p>
+            </div>
+          </div>
+
+          <!-- VIDEO 2 -->
+          <div class="info-card">
+            <iframe width="100%" height="200" 
+              src="https://www.youtube.com/embed/J0x5bZxWz9g" 
+              title="Japan Travel" frameborder="0" allowfullscreen>
+            </iframe>
+            <div class="card-body">
+              <h3>Japan</h3>
+              <p>Precision, stillness, and moments you don’t rush.</p>
+            </div>
+          </div>
+
+          <!-- VIDEO 3 -->
+          <div class="info-card">
+            <iframe width="100%" height="200" 
+              src="https://www.youtube.com/embed/7O4mO3M4W0Y" 
+              title="Morocco Travel" frameborder="0" allowfullscreen>
+            </iframe>
+            <div class="card-body">
+              <h3>Morocco</h3>
+              <p>Color, chaos, and rhythm you feel instantly.</p>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- SECOND SECTION -->
+        <section style="max-width:700px; margin:50px auto 0; text-align:center;">
+          <h2>Why this matters</h2>
+          <p style="color:#5e646b;">
+            It’s hard to plan a trip when everything feels abstract.
+            Seeing places helps you understand the pace, the feeling,
+            and what kind of experience you’re actually choosing.
+          </p>
+        </section>
+
       </main>
 
     </div>
   </div>
-
 </body>
 </html>

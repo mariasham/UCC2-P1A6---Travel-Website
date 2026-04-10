@@ -7,65 +7,94 @@
   <link rel="stylesheet" href="../css/style.css">
   <script src="../js/script.js" defer></script>
 </head>
+
 <body>
-  <div class="subpage-shell">
-    <div class="subpage-card">
-      <header class="subpage-header">
+  <div class="page-shell">
+    <div class="site-card">
+
+      <!-- HEADER (same as other pages) -->
+      <header class="topbar">
         <div class="brand">
           <span class="brand-mark">✦</span>
           <span class="brand-text">Exploratour</span>
         </div>
 
-        <nav class="subpage-nav">
-          <a href="../index.html">Home</a>
-          <a href="destinations.html">Destinations</a>
-          <a href="booking.html">Booking</a>
-          <a href="flights.html">Flights</a>
-          <a href="hotels.html">Hotels</a>
-          <a href="contact.html">Contact</a>
-          <a href="login.html">Login</a>
-        </nav>
+        <div class="topbar-right">
+          <a href="../index.html" class="text-link">Home</a>
+          <a href="destinations.html" class="text-link">Destinations</a>
+          <a href="login.html" class="button-light">Login</a>
+        </div>
       </header>
 
-      <section class="subpage-hero">
-        <img src="../images/about.jpg" alt="Travel planning" class="subpage-hero-image">
-        <div class="subpage-hero-overlay"></div>
-        <div class="subpage-hero-text">
-          <span class="subpage-tag">About</span>
-          <h1>About Exploratour</h1>
-          <p>
-            Learn more about the platform, how it helps travelers, and the tools
-            available across the website.
-          </p>
-        </div>
-      </section>
+      <!-- PAGE CONTENT -->
+      <main style="padding:120px 30px 60px;">
 
-      <main class="subpage-content">
-        <section class="content-block">
+        <h1 style="text-align:center; margin-bottom:10px;">
+          About Exploratour
+        </h1>
+
+        <p style="text-align:center; color:#5e646b; margin-bottom:40px;">
+          Not just where you go — but how it all fits together.
+        </p>
+
+        <!-- WELCOME -->
+        <section style="max-width:700px; margin:0 auto 40px;">
           <h2>Welcome</h2>
           <p>
-            This page is part of the Exploratour travel experience. Content can be
-            expanded later with full destination details, travel tools, and user resources.
+            Exploratour isn’t about checking places off a list — it’s about figuring out
+            what actually feels right for you. Whether you're planning something far out
+            or just exploring ideas, everything here is built to help you see your trip
+            clearly before you even go.
           </p>
         </section>
 
-        <section class="content-grid">
-          <div class="mini-card">
-            <h3>Easy Navigation</h3>
-            <p>Move between destinations, flights, hotels, and planning pages with ease.</p>
+        <!-- GRID -->
+        <section class="grid-layout">
+
+          <div class="info-card">
+            <div class="card-body">
+              <h3>Explore Naturally</h3>
+              <p>
+                Start broad, then narrow things down. Move from continents to cities and
+                find places that actually match your pace.
+              </p>
+            </div>
           </div>
 
-          <div class="mini-card">
-            <h3>Travel Tools</h3>
-            <p>Use saved trips, itinerary planning, weather, and budget pages to stay organized.</p>
+          <div class="info-card">
+            <div class="card-body">
+              <h3>Plan with Intention</h3>
+              <p>
+                From maps to saved ideas, everything is designed to help you organize your
+                trip without feeling overwhelmed.
+              </p>
+            </div>
           </div>
 
-          <div class="mini-card">
-            <h3>User-Friendly Design</h3>
-            <p>The site is built to feel clean, modern, and easy for travelers to explore.</p>
+          <div class="info-card">
+            <div class="card-body">
+              <h3>See the Bigger Picture</h3>
+              <p>
+                It’s not just where you go — it’s how everything connects. Distance,
+                timing, and flow all start to make sense here.
+              </p>
+            </div>
           </div>
+
         </section>
+
+        <!-- WHY -->
+        <section style="max-width:700px; margin:40px auto 0;">
+          <h2>Why Exploratour</h2>
+          <p>
+            Most travel sites throw information at you. This one is built to guide you.
+            You’re not just picking destinations — you’re understanding how they fit
+            together, what they feel like, and how your trip unfolds before it even starts.
+          </p>
+        </section>
+
       </main>
+
     </div>
   </div>
 </body>

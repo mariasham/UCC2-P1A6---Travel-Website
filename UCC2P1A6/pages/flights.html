@@ -1,68 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flights - Exploratour</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flights | Exploratour</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
+  <div class="page-shell">
+    <div class="site-card">
 
-<div class="page-shell">
-    <div class="hero-card">
+      <!-- HEADER -->
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </div>
 
-        <header class="topbar">
-            <div class="brand">Exploratour</div>
+        <div class="topbar-right">
+          <a href="../index.html" class="text-link">Home</a>
+          <a href="destinations.html" class="text-link">Destinations</a>
+          <a href="login.html" class="button-light">Login</a>
+        </div>
+      </header>
 
-            <nav class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="destinations.html">Destinations</a>
-                <a href="flights.html">Flights</a>
-                <a href="hotels.html">Hotels</a>
-                <a href="map.html">Map</a>
-                <a href="videos.html">Videos</a>
-                <a href="login.html">Login</a>
-            </nav>
-        </header>
+      <!-- PAGE CONTENT -->
+      <main style="padding:120px 30px 60px; display:flex; justify-content:center;">
 
-        <main class="hero-content">
+        <div class="form-card">
 
-            <div class="content-card">
+          <h1 class="page-title">Flights</h1>
 
-                <h1>Flights</h1>
+          <p class="page-copy">
+            This is where the trip starts to feel real. You’re not guessing anymore — you’re choosing what actually works for you.
+          </p>
 
-                <p>
-                    This is where the trip starts to feel real. You can look into routes, timing, and options that actually fit your plans instead of guessing.
-                </p>
+          <form>
 
-                <form>
+            <label for="from">Departure City</label>
+            <input id="from" type="text" placeholder="Where are you leaving from?" required>
 
-                    <label>Departure City</label>
-                    <input type="text" placeholder="Where are you leaving from?" required>
+            <label for="to">Destination</label>
+            <input id="to" type="text" placeholder="Where are you going?" required>
 
-                    <label>Destination</label>
-                    <input type="text" placeholder="Where are you going?" required>
+            <label for="depart">Departure Date</label>
+            <input id="depart" type="date" required>
 
-                    <label>Departure Date</label>
-                    <input type="date" required>
+            <label for="return">Return Date</label>
+            <input id="return" type="date">
 
-                    <label>Return Date</label>
-                    <input type="date">
+            <label for="passengers">Passengers</label>
+            <input id="passengers" type="number" min="1" value="1" required>
 
-                    <label>Passengers</label>
-                    <input type="number" min="1" value="1" required>
+            <button type="submit" class="submit-button">
+              Search Flights
+            </button>
 
-                    <button type="submit" class="submit-button">Search Flights</button>
+          </form>
 
-                </form>
+          <p style="margin-top:15px; font-size:0.9rem; color:#5e646b;">
+            *This is a demo search. Results are not live.
+          </p>
 
-            </div>
+        </div>
 
-        </main>
+      </main>
 
     </div>
-</div>
-
+  </div>
 </body>
 </html>

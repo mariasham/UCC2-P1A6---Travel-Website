@@ -1,72 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Checklist - Exploratour</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist | Exploratour</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
 </head>
 
 <body>
+  <div class="page-shell">
+    <div class="site-card">
 
-<div class="page-shell">
-    <div class="hero-card">
+      <!-- HEADER -->
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </div>
 
-        <header class="topbar">
-            <div class="brand">Exploratour</div>
+        <div class="topbar-right">
+          <a href="../index.html" class="text-link">Home</a>
+          <a href="destinations.html" class="text-link">Destinations</a>
+          <a href="login.html" class="button-light">Login</a>
+        </div>
+      </header>
 
-            <nav class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="destinations.html">Destinations</a>
-                <a href="flights.html">Flights</a>
-                <a href="hotels.html">Hotels</a>
-                <a href="map.html">Map</a>
-                <a href="videos.html">Videos</a>
-                <a href="login.html">Login</a>
-            </nav>
-        </header>
+      <!-- PAGE CONTENT -->
+      <main style="padding:120px 30px 60px;">
 
-        <main class="hero-content">
+        <h1 style="text-align:center; margin-bottom:10px;">
+          Travel Checklist
+        </h1>
 
-            <div class="content-card">
+        <p style="text-align:center; color:#5e646b; margin-bottom:40px;">
+          The small things are what people forget. Having everything ready
+          makes your trip smoother and way less stressful.
+        </p>
 
-                <h1>Travel Checklist</h1>
+        <section class="grid-layout">
 
-                <p>
-                    This is for the small things people forget when they’re excited to leave.
-                    Having everything ready makes the trip feel smoother and way less stressful.
-                </p>
-
-                <h2>Before You Leave</h2>
-                <ul>
-                    <li>Passport or ID</li>
-                    <li>Flight confirmation</li>
-                    <li>Hotel reservation</li>
-                    <li>Travel insurance (if needed)</li>
-                </ul>
-
-                <h2>Packing Essentials</h2>
-                <ul>
-                    <li>Clothes based on weather</li>
-                    <li>Toiletries</li>
-                    <li>Chargers and electronics</li>
-                    <li>Comfortable shoes</li>
-                </ul>
-
-                <h2>Extras</h2>
-                <ul>
-                    <li>Snacks</li>
-                    <li>Headphones</li>
-                    <li>Portable charger</li>
-                    <li>Backup cash or card</li>
-                </ul>
-
+          <!-- SECTION 1 -->
+          <div class="info-card">
+            <div class="card-body">
+              <h3>Before You Leave</h3>
+              <ul class="checklist">
+                <li><input type="checkbox"> Passport or ID</li>
+                <li><input type="checkbox"> Flight confirmation</li>
+                <li><input type="checkbox"> Hotel reservation</li>
+                <li><input type="checkbox"> Travel insurance</li>
+              </ul>
             </div>
+          </div>
 
-        </main>
+          <!-- SECTION 2 -->
+          <div class="info-card">
+            <div class="card-body">
+              <h3>Packing Essentials</h3>
+              <ul class="checklist">
+                <li><input type="checkbox"> Clothes for the weather</li>
+                <li><input type="checkbox"> Toiletries</li>
+                <li><input type="checkbox"> Chargers</li>
+                <li><input type="checkbox"> Comfortable shoes</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- SECTION 3 -->
+          <div class="info-card">
+            <div class="card-body">
+              <h3>Extras</h3>
+              <ul class="checklist">
+                <li><input type="checkbox"> Snacks</li>
+                <li><input type="checkbox"> Headphones</li>
+                <li><input type="checkbox"> Portable charger</li>
+                <li><input type="checkbox"> Backup cash/card</li>
+              </ul>
+            </div>
+          </div>
+
+        </section>
+
+        <!-- RESET BUTTON -->
+        <div style="text-align:center; margin-top:30px;">
+          <button onclick="resetChecklist()" class="submit-button">
+            Reset Checklist
+          </button>
+        </div>
+
+      </main>
 
     </div>
-</div>
-
+  </div>
 </body>
 </html>

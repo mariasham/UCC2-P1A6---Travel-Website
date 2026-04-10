@@ -3,35 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAGE TITLE - Exploratour</title>
+  <title>City Guide | Exploratour</title>
   <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
 </head>
+
 <body>
-
   <div class="page-shell">
-    <div class="hero-card">
+    <div class="site-card">
 
+      <!-- HEADER -->
       <header class="topbar">
-        <div class="brand">Exploratour</div>
-        <nav class="nav-links">
-          <a href="../index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="destinations.html">Destinations</a>
-          <a href="booking.html">Booking</a>
-          <a href="videos.html">Videos</a>
-          <a href="contact.html">Contact</a>
-        </nav>
+        <div class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </div>
+
+        <div class="topbar-right">
+          <a href="../index.html" class="text-link">Home</a>
+          <a href="destinations.html" class="text-link">Destinations</a>
+          <a href="login.html" class="button-light">Login</a>
+        </div>
       </header>
 
-      <main class="hero-content">
-        <div class="content-card">
-          <h1>PAGE HEADING</h1>
-          <p>PAGE DESCRIPTION</p>
-        </div>
+      <!-- CONTENT -->
+      <main style="padding:120px 30px 60px;">
+
+        <!-- TITLE -->
+        <h1 id="cityTitle" style="text-align:center; margin-bottom:10px;">
+          City
+        </h1>
+
+        <p id="cityDesc" style="text-align:center; color:#5e646b; margin-bottom:40px;">
+          Loading...
+        </p>
+
+        <!-- SECTIONS -->
+        <section class="grid-layout">
+
+          <!-- THINGS TO DO -->
+          <div class="info-card">
+            <div class="card-body">
+              <h3>Things to Do</h3>
+              <ul id="thingsList"></ul>
+            </div>
+          </div>
+
+          <!-- FOOD -->
+          <div class="info-card">
+            <div class="card-body">
+              <h3>Food & Spots</h3>
+              <ul id="foodList"></ul>
+            </div>
+          </div>
+
+          <!-- TIPS -->
+          <div class="info-card">
+            <div class="card-body">
+              <h3>Local Tips</h3>
+              <ul id="tipsList"></ul>
+            </div>
+          </div>
+
+        </section>
+
       </main>
 
     </div>
   </div>
-
 </body>
 </html>

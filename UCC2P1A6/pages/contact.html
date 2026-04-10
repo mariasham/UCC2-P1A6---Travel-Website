@@ -1,63 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Exploratour</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Exploratour</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
 </head>
 
 <body>
+    <div class="page-shell">
+        <div class="site-card">
 
-<div class="page-shell">
-    <div class="hero-card">
+            <!-- HEADER -->
+            <header class="topbar">
+                <div class="brand">
+                    <span class="brand-mark">✦</span>
+                    <span class="brand-text">Exploratour</span>
+                </div>
 
-        <header class="topbar">
-            <div class="brand">Exploratour</div>
+                <div class="topbar-right">
+                    <a href="../index.html" class="text-link">Home</a>
+                    <a href="destinations.html" class="text-link">Destinations</a>
+                    <a href="login.html" class="button-light">Login</a>
+                </div>
+            </header>
 
-            <nav class="nav-links">
-                <a href="../index.html">Home</a>
-                <a href="destinations.html">Destinations</a>
-                <a href="flights.html">Flights</a>
-                <a href="hotels.html">Hotels</a>
-                <a href="map.html">Map</a>
-                <a href="videos.html">Videos</a>
-                <a href="login.html">Login</a>
-            </nav>
-        </header>
+            <!-- PAGE CONTENT -->
+            <main style="padding:120px 30px 60px; display:flex; justify-content:center;">
 
-        <main class="hero-content">
+                <div class="form-card">
+                    <h1 class="page-title">Contact</h1>
 
-            <div class="content-card">
+                    <p class="page-copy">
+                        If something feels confusing or you just need help figuring out where to start,
+                        you can reach out here. Even if it’s just a quick question, it’s better than guessing.
+                    </p>
 
-                <h1>Contact</h1>
+                    <form id="contactForm" action="success.html" onsubmit="return validateContactForm()">
 
-                <p>
-                    If something feels confusing or you just need help figuring out where to start,
-                    you can reach out here. Even if it’s just a quick question, it’s better than guessing.
-                </p>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name">
+                        <small class="error" id="nameError"></small>
 
-                <form action="success.html">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Your email">
+                        <small class="error" id="emailError"></small>
 
-                    <label>Name</label>
-                    <input type="text" placeholder="Your name" required>
+                        <label for="topic">What do you need help with?</label>
+                        <select id="topic" name="topic">
+                            <option value="">Select an option</option>
+                            <option value="booking">Booking</option>
+                            <option value="destinations">Destinations</option>
+                            <option value="flights">Flights</option>
+                            <option value="hotels">Hotels</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <small class="error" id="topicError"></small>
 
-                    <label>Email</label>
-                    <input type="email" placeholder="Your email" required>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="What do you need help with?"
+                            maxlength="200"></textarea>
+                        <div id="charCount">0 / 200</div>
+                        <small class="error" id="messageError"></small>
 
-                    <label>Message</label>
-                    <input type="text" placeholder="What do you need help with?" required>
+                        <button type="submit" class="submit-button">Send Message</button>
 
-                    <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
 
-                </form>
+            </main>
 
-            </div>
-
-        </main>
-
+        </div>
     </div>
-</div>
-
 </body>
+
 </html>
