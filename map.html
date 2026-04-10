@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map | Exploratour</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="page-shell">
+        <div class="site-card">
+
+            <!-- HEADER -->
+            <header class="topbar">
+                <div class="brand">
+                    <span class="brand-mark">✦</span>
+                    <span class="brand-text">Exploratour</span>
+                </div>
+
+                <div class="topbar-right">
+                    <a href="../index.html" class="text-link">Home</a>
+                    <a href="destinations.html" class="text-link">Destinations</a>
+                    <a href="login.html" class="button-light">Login</a>
+                </div>
+            </header>
+
+            <!-- PAGE CONTENT -->
+            <main style="padding:120px 30px 60px;">
+
+                <h1 style="text-align:center; margin-bottom:10px;">Map</h1>
+
+                <p style="text-align:center; color:#5e646b; margin-bottom:30px;">
+                    See where everything is. Zoom out, zoom in, and start thinking about how your trip actually fits
+                    together.
+                </p>
+
+                <!-- SEARCH BAR -->
+                <div class="map-search-container">
+                    <input type="text" id="mapSearch" placeholder="Search a city (e.g. Tokyo, Rome)">
+                    <button onclick="updateMap()">Search</button>
+                </div>
+
+                <!-- MAP -->
+                <div style="display:flex; justify-content:center;">
+                    <iframe id="mapFrame" class="map-frame" src="https://www.google.com/maps?q=Paris&output=embed"
+                        loading="lazy">
+                    </iframe>
+                </div>
+
+                <p style="text-align:center; margin-top:20px; color:#5e646b;">
+                    Think about where you’d stay, what’s nearby, and how easy it is to move around.
+                </p>
+
+            </main>
+
+        </div>
+    </div>
+</body>
+
+</html>
