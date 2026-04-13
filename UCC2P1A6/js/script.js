@@ -251,3 +251,76 @@ if (cityData[city] && document.getElementById("cityTitle")) {
     tipsList.innerHTML += `<li>${item}</li>`;
   });
 }
+
+// ================= FOOD DATA =================
+const foodData = [
+  { name: "Italy 🍝", type: "comfort", desc: "Fresh pasta, espresso, and slow meals." },
+  { name: "Japan 🍣", type: "fine", desc: "Precision, balance, and elevated dining." },
+  { name: "Morocco 🌶️", type: "street", desc: "Spices, markets, and food that feels alive." },
+  { name: "Naples 🍕", type: "street", desc: "Pizza, chaos, and flavor everywhere." },
+  { name: "Paris 🍷", type: "fine", desc: "Elegant dining and unforgettable flavors." }
+];
+
+// ================= RENDER FUNCTION =================
+function renderFood(filter = "all") {
+  const grid = document.getElementById("foodGrid");
+  if (!grid) return;
+
+  grid.innerHTML = "";
+
+  const filtered = filter === "all"
+    ? foodData
+    : foodData.filter(item => item.type === filter);
+
+  filtered.forEach(item => {
+    const card = `
+      <div class="info-card">
+        <div class="card-body">
+          <h3>${item.name}</h3>
+          <p>${item.desc}</p>
+        </div>
+      </div>
+    `;
+    grid.innerHTML += card;
+  });
+}
+
+// ================= FILTER BUTTON =================
+function filterFood(type) {
+  renderFood(type);
+}
+
+// ================= INITIAL LOAD =================
+renderFood();
+
+function getWeather(passedCity) {
+  const city = passedCity || document.getElementById("weatherSearch").value;
+  const result = document.getElementById("weatherResult");
+
+  if (!city || city.trim() === "") {
+    result.innerHTML = "Please enter a city.";
+    return;
+  }
+
+  result.innerHTML = `
+    <h2>${city}</h2>
+    <p>🌤️ Mild / Clear</p>
+    <p>🌡️ ~70°F</p>
+    <p style="color:#5e646b;">*Demo weather preview</p>
+  `;
+}
+
+const weatherParams = new URLSearchParams(window.location.search);
+const weatherCity = weatherParams.get("city");
+
+if (weatherCity && document.getElementById("weatherSearch")) {
+  document.getElementById("weatherSearch").value = weatherCity;
+  getWeather(weatherCity);
+}
+
+function goToWeather() {
+  const city = document.getElementById("mapSearch").value;
+  if (city.trim() !== "") {
+    window.location.href = "weather.html?city=" + encodeURIComponent(city);
+  }
+}

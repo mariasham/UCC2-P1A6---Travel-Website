@@ -3,35 +3,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAGE TITLE - Exploratour</title>
+  <title>Food | Exploratour</title>
   <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
 </head>
+
 <body>
-
   <div class="page-shell">
-    <div class="hero-card">
+    <div class="site-card">
 
+      <!-- HEADER -->
       <header class="topbar">
-        <div class="brand">Exploratour</div>
-        <nav class="nav-links">
-          <a href="../index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="destinations.html">Destinations</a>
-          <a href="booking.html">Booking</a>
-          <a href="videos.html">Videos</a>
-          <a href="contact.html">Contact</a>
-        </nav>
+        <div class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </div>
+
+        <div class="topbar-right">
+          <a href="../index.html" class="text-link">Home</a>
+          <a href="destinations.html" class="text-link">Destinations</a>
+          <a href="login.html" class="button-light">Login</a>
+        </div>
       </header>
 
-      <main class="hero-content">
-        <div class="content-card">
-          <h1>PAGE HEADING</h1>
-          <p>PAGE DESCRIPTION</p>
+      <!-- PAGE CONTENT -->
+      <main style="padding:120px 30px 60px;">
+
+        <!-- TITLE -->
+        <h1 style="text-align:center; margin-bottom:10px;">
+          Food & Local Spots
+        </h1>
+
+        <p style="text-align:center; color:#5e646b; margin-bottom:40px;">
+          The best part of traveling isn’t just where you go — it’s what you taste along the way.
+        </p>
+
+        <!-- FILTER -->
+        <div style="display:flex; justify-content:center; gap:10px; margin-bottom:30px;">
+          <button onclick="filterFood('all')" class="submit-button">All</button>
+          <button onclick="filterFood('comfort')" class="submit-button">Comfort Food</button>
+          <button onclick="filterFood('street')" class="submit-button">Street Food</button>
+          <button onclick="filterFood('fine')" class="submit-button">Fine Dining</button>
         </div>
+
+        <!-- DYNAMIC GRID -->
+        <div class="grid-layout" id="foodGrid"></div>
+
+        <!-- SECOND SECTION -->
+        <h2 style="margin-top:50px; margin-bottom:20px;">
+          How to Eat Like a Local
+        </h2>
+
+        <div class="grid-layout">
+          <div class="info-card">
+            <div class="card-body">
+              <h3>Go Where It’s Busy</h3>
+              <p>If locals are there, it’s usually worth it.</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="card-body">
+              <h3>Avoid Tourist Menus</h3>
+              <p>The best spots don’t need to advertise.</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="card-body">
+              <h3>Try Something New</h3>
+              <p>Even if you’re unsure — that’s the point.</p>
+            </div>
+          </div>
+        </div>
+
       </main>
 
     </div>
   </div>
-
 </body>
 </html>

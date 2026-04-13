@@ -1,37 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAGE TITLE - Exploratour</title>
+  <title>Weather | Exploratour</title>
   <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/script.js" defer></script>
 </head>
+
 <body>
-
   <div class="page-shell">
-    <div class="hero-card">
+    <div class="site-card">
 
+      <!-- HEADER -->
       <header class="topbar">
-        <div class="brand">Exploratour</div>
-        <nav class="nav-links">
-          <a href="../index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="destinations.html">Destinations</a>
-          <a href="booking.html">Booking</a>
-          <a href="videos.html">Videos</a>
-          <a href="contact.html">Contact</a>
-        </nav>
+        <div class="brand">
+          <span class="brand-mark">✦</span>
+          <span class="brand-text">Exploratour</span>
+        </div>
+        <div class="topbar-right">
+          <a href="../index.html" class="text-link">Home</a>
+          <a href="destinations.html" class="text-link">Destinations</a>
+          <a href="login.html" class="button-light">Login</a>
+        </div>
       </header>
 
-      <main class="hero-content">
-        <div class="content-card">
-          <h1>PAGE HEADING</h1>
-          <p>PAGE DESCRIPTION</p>
+      <!-- CONTENT -->
+      <main style="padding:120px 30px 60px;">
+
+        <!-- TITLE -->
+        <h1 style="text-align:center; margin-bottom:10px;">
+          Weather
+        </h1>
+
+        <p style="text-align:center; color:#5e646b; margin-bottom:30px;">
+          Weather changes everything — what you pack, where you go, and how your trip feels.
+        </p>
+
+        <!-- SEARCH -->
+        <div class="search-weather">
+          <input type="text" id="weatherSearch" placeholder="Enter a city (Rome, Tokyo)">
+          <button onclick="goToWeather()">Check Weather</button>
         </div>
+
+        <!-- RESULT -->
+        <div id="weatherResult" style="text-align:center; margin-top:20px;"></div>
+
+        <!-- EXTRA INFO -->
+        <div class="grid-layout" style="margin-top:50px;">
+
+          <div class="info-card">
+            <div class="card-body">
+              <h3>🌡️ Temperature</h3>
+              <p>Helps you pack right and plan your day realistically.</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="card-body">
+              <h3>🌧️ Conditions</h3>
+              <p>Rain, sun, or clouds can completely shift your plans.</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="card-body">
+              <h3>🧳 Planning</h3>
+              <p>Weather shapes your itinerary more than you think.</p>
+            </div>
+          </div>
+          <a href="weather.html?city=Paris" class="submit-button">
+            Check Weather
+          </a>
+
+        </div>
+
       </main>
 
     </div>
   </div>
-
 </body>
+
 </html>

@@ -530,3 +530,47 @@ main {
   margin-bottom: 10px;
   font-size: 0.95rem;
 }
+
+#foodGrid .info-card {
+  display: flex;            
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  min-height: 150px;
+
+  max-width: none;            
+}
+
+#foodGrid .card-body {
+  padding: 25px;
+}
+
+.submit-button.active {
+  background: #1f3d2b;
+}
+
+.search-weather {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.search-weather input {
+  padding: 12px;
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.search-weather button {
+  padding: 12px 18px;
+  border-radius: 10px;
+  border: none;
+  background: #2e5e3a;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  width: auto;
+}
